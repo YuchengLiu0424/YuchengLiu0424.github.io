@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Yucheng Liu is an Engineering Science student at the University of Oxford, working on probabilistic modelling, decision-making, and agentic systems. Research, manuscripts, and code.">
+  <meta property="og:title" content="Yucheng Liu — Research & Engineering">
+  <meta property="og:description" content="Probabilistic modelling, decision-making, and agentic systems. Research and manuscripts by Yucheng Liu, University of Oxford.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yuchengliu0424.github.io/">
+  <title>Yucheng Liu — Research & Engineering</title>
+  <link rel="canonical" href="https://yuchengliu0424.github.io/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="profile">
+      <a class="monogram" href="#about" aria-label="Yucheng Liu, home">YL<span aria-hidden="true">.</span></a>
+      <div class="profile-heading">
+        <p class="eyebrow">Research & Engineering</p>
+        <a class="profile-name" href="#about">Yucheng Liu</a>
+        <p class="affiliation">Engineering Science<span class="affiliation-divider"><br></span>University of Oxford</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About <span aria-hidden="true">01</span></a>
+        <a href="#research">Research <span aria-hidden="true">02</span></a>
+        <a href="#experience">Experience <span aria-hidden="true">03</span></a>
+        <a href="#projects">Projects <span aria-hidden="true">04</span></a>
+        <a href="#contact">Contact <span aria-hidden="true">05</span></a>
+      </nav>
+      <div class="profile-links">
+        <a href="https://github.com/YuchengLiu0424">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/yucheng-liu-633751343">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="mailto:yucheng.liu@st-hildas.ox.ac.uk">Email <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="profile-note">Oxford, United Kingdom</p>
+    </header>
+    <main id="main">
+      <section id="about" class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow section-kicker"><span class="small-rule" aria-hidden="true"></span> About / 01</p>
+        <h1 id="intro-title">Learning from evidence.<br><em>Deciding under uncertainty.</em></h1>
+        <p class="intro-lead">I’m Yucheng, an MEng Engineering Science student at the University of Oxford, specialising in Information Engineering.</p>
+        <p>My research interests are <strong>probabilistic modelling and decision-making</strong>. My work spans surrogate-assisted engineering design, structured-prior auditing, Bayesian active inquiry, and agent systems for software improvement.</p>
+        <div class="intro-actions"><a class="button" href="#research">Explore my research <span aria-hidden="true">↓</span></a><a class="text-link" href="mailto:yucheng.liu@st-hildas.ox.ac.uk">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <div class="education-strip">
+          <div><span class="label">Education</span><strong>MEng · Oxford</strong><span>2024–2028 (expected)</span></div>
+          <div><span class="label">Academic record</span><strong>Distinction / First-class</strong><span>Year 1: 31/200 · Year 2: 33/200</span></div>
+          <div><span class="label">Scholarship</span><strong>Helen Mary Allen</strong><span>Engineering Science · 2025, three-year award</span></div>
+        </div>
+      </section>
+      <section id="research" aria-labelledby="research-title">
+        <div class="section-heading"><div><p class="eyebrow">Research / 02</p><h2 id="research-title">Selected research</h2></div><span class="section-aside">Papers, methods & findings</span></div>
+        <p class="section-intro">Research in simulation-driven design, multimodal inference, and agent-assisted discovery. Publication status and available manuscripts are listed with each study.</p>
+        <article class="paper">
+          <div class="paper-index" aria-hidden="true">01</div>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Surrogate modelling</span></div>
+            <h3>A FEM-Based Surrogate Modelling and Optimization Framework for Physics-Constrained Electromagnetic Coil Design</h3>
+            <p class="authors"><strong>Yucheng Liu</strong></p>
+            <p>A Python–COMSOL workflow for constrained coil design, combining finite-element simulation, Gaussian-process surrogates, and verified optimisation. Paired comparisons show how the evaluation budget changes which optimiser performs best.</p>
+            <p class="finding"><span>Key finding</span> Mean R² of 0.9996 across five validation splits; no robust endpoint advantage of expected improvement over posterior-mean selection in the finite-pool ablation.</p>
+            <div class="resource-links"><a href="https://arxiv.org/abs/2608.18903" aria-label="Coil design preprint on arXiv">arXiv <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/pdf/2608.18903" aria-label="Read coil design paper PDF">Paper PDF <span aria-hidden="true">↗</span></a><a href="https://github.com/YuchengLiu0424/FEM-GPR-Bayesian_Optimization_on_Coil" aria-label="Coil optimisation source code">Code <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper-index" aria-hidden="true">02</div>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="status manuscript">Completed manuscript</span><span>2026</span><span>Structured priors</span></div>
+            <h3>Alpha-TCM: A Nine-Layer Framework for TCM-Guided Multimodal Inference and Structured-Prior Auditing</h3>
+            <p class="authors"><strong>Yucheng Liu</strong>, Everett X. Wang</p>
+            <p>How can a system use domain knowledge without treating it as unquestionable evidence? A nine-layer architecture separates knowledge, observations, inference, and downstream authority; a synthetic prototype audits its static knowledge–evidence interface.</p>
+            <p class="finding"><span>Key finding</span> Across ten paired seeds and four training sizes, contextual priors helped in low-data settings relative to marginal fusion, but did not establish a specifically Bayesian predictive advantage.</p>
+            <div class="resource-links"><a href="papers/alpha-tcm-structured-prior-auditing.pdf" aria-label="Read Alpha-TCM structured-prior auditing manuscript PDF">Read manuscript <span class="file-type">PDF</span></a><a href="papers/alpha-tcm-structured-prior-auditing.pdf" download>Download <span aria-hidden="true">↓</span></a></div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper-index" aria-hidden="true">03</div>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="status manuscript">Completed manuscript</span><span>2026</span><span>Active inquiry</span></div>
+            <h3>Alpha-TCM: Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry</h3>
+            <p class="authors"><strong>Yucheng Liu</strong>, Everett X. Wang</p>
+            <p>A synthetic test bed connecting multimodal evidence to sequential question selection over eight syndrome families and 33 fine terms. The system makes missing-evidence routing, knowledge failures, and abstention separately testable.</p>
+            <p class="finding"><span>Key finding</span> On 600 synthetic cases, cost-sensitive inquiry reached 42.5% fine-term accuracy versus 33.0% for the tested fixed-order policy, using 9.80 versus 9.35 questions on average. These are descriptive comparisons.</p>
+            <div class="resource-links"><a href="papers/alpha-tcm-active-bayesian-inquiry.pdf" aria-label="Read Alpha-TCM active Bayesian inquiry manuscript PDF">Read manuscript <span class="file-type">PDF</span></a><a href="papers/alpha-tcm-active-bayesian-inquiry.pdf" download>Download <span aria-hidden="true">↓</span></a></div>
+          </div>
+        </article>
+        <p class="research-note">The Alpha-TCM studies use synthetic data. They investigate computational methods and system design; they do not establish clinical diagnostic or treatment validity.</p>
+        <article class="paper">
+          <div class="paper-index" aria-hidden="true">04</div>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="status">Preprint · revised manuscript</span><span>2026</span><span>Agent-assisted discovery</span></div>
+            <h3>STC: Reversible Digit-Context Decomposition for BWT-Family Text Compression</h3>
+            <p class="authors">Jingyang Du, Yang Shen, Anling Xiang, <strong>Yucheng Liu</strong></p>
+            <p>A reversible compression transform discovered through ZiYor, separating variable digit payloads from their surrounding text. My contribution was implementing the ZiYor harness supporting algorithm exploration.</p>
+            <p class="finding"><span>Key finding</span> A 1.64% smaller enwik9 archive than the same coder without digit decomposition, with exact reconstruction of the full input.</p>
+            <div class="resource-links"><a href="papers/stc-revised-manuscript.pdf" aria-label="Read revised STC manuscript PDF">Revised manuscript <span class="file-type">PDF</span></a><a href="https://arxiv.org/abs/2606.03570" aria-label="STC preprint on arXiv">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/thu-nmrc/STC-for-BWT-FamilyText-Compression" aria-label="STC source code">Code <span aria-hidden="true">↗</span></a></div>
+            <p class="version-note">The downloadable revision includes the updated author list; the arXiv author-list update is pending.</p>
+          </div>
+        </article>
+      </section>
+      <section id="experience" aria-labelledby="experience-title">
+        <div class="section-heading"><div><p class="eyebrow">Experience / 03</p><h2 id="experience-title">Research & engineering</h2></div></div>
+        <div class="experience-list">
+          <article class="experience-entry"><p class="date">Jun–Oct 2026</p><div><h3>Agentic Systems</h3><p class="role">Research Intern · College of AI, Tsinghua University</p><p class="supervisor">Supervisor: Prof. Yang Shen</p><p>Co-developed workflows for iterative software improvement, standardised evaluations, reproduced failures, and analysed execution traces and abnormal token consumption. Implemented the ZiYor harness supporting STC exploration.</p></div></article>
+          <article class="experience-entry"><p class="date">Jun–Oct 2026</p><div><h3>Probabilistic Modelling & Active Inquiry</h3><p class="role">Research Intern · Beijing Institute of Nanoenergy and Nanosystems, CAS</p><p class="supervisor">Supervisor: Prof. Everett X. Wang</p><p>Led Alpha-TCM, implementing synthetic prototypes for structured-prior auditing and hierarchical Bayesian inquiry, with matched-information controls and targeted failure tests.</p></div></article>
+          <article class="experience-entry"><p class="date">Jun–Sep 2025<br><span>Continued in 2026</span></p><div><h3>Surrogate Modelling & Electromagnetic Design</h3><p class="role">Research Intern · Institute of Electrical Engineering, CAS</p><p class="supervisor">Supervisor: Prof. Tao Song</p><p>Built a Python–MPh–COMSOL pipeline for a seven-parameter coil–core design problem, from constrained FEM sampling to Gaussian-process modelling and verified optimisation.</p></div></article>
+          <article class="experience-entry"><p class="date">Jun–Oct 2026</p><div><h3>Agent Products & Commercial Demos</h3><p class="role">Intern · <a href="https://www.zeelin.cn/">ZeeLin</a></p><p>Built agent applications and customer-facing demos, including a digital-farm prototype and a multi-agent workflow for trend monitoring and local-content analysis. Diagnosed failed runs through trajectory replay and tool-use inspection.</p></div></article>
+          <article class="experience-entry"><p class="date">Jun 2026–present</p><div><h3>Simulation & Decision-Making</h3><p class="role">Research collaboration · University of Oxford</p><p class="supervisor">Project planning with Prof. Stephen Roberts and Prof. Barbara Rossi</p><p>Co-developed a proposed fourth-year project on simulation-driven engineering design using physics-informed learning, surrogate models, and Bayesian optimisation.</p></div></article>
+        </div>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><div><p class="eyebrow">Projects / 04</p><h2 id="projects-title">Selected code</h2></div><a class="text-link" href="https://github.com/YuchengLiu0424">GitHub profile <span aria-hidden="true">↗</span></a></div>
+        <div class="project-grid">
+          <article class="project"><p class="label">Independent project</p><h3>DiCoJev</h3><p>Decision-making over diffusion-generated action sets, with separate estimates of candidate coverage and selection confidence, and feedback to act, expand, abstain, or escalate.</p><a class="text-link" href="https://github.com/YuchengLiu0424/DiCoJev">Explore repository <span aria-hidden="true">↗</span></a></article>
+          <article class="project"><p class="label">Contributor</p><h3>AutoRSI & ZiYor Harness</h3><p>Bounded software-improvement loops with verification and replay, alongside an auditable Harbor-compatible terminal-agent reference implementation.</p><div class="resource-links"><a href="https://github.com/wlkqyang-star/autorsi">AutoRSI <span aria-hidden="true">↗</span></a><a href="https://github.com/ziyor-ai/ziyor-harness">ZiYor <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project project-wide"><div><p class="label">Research software · Author</p><h3>FEM–GP Coil Optimisation</h3></div><div><p>Reproducibility code and COMSOL model for the coil study: 250 validated FEM designs, optimiser comparisons, and claim-audit scripts.</p><a class="text-link" href="https://github.com/YuchengLiu0424/FEM-GPR-Bayesian_Optimization_on_Coil">Explore repository <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+        <div class="skills"><h3>Methods & tools</h3><p><strong>Probabilistic ML:</strong> Gaussian processes, Bayesian optimisation, uncertainty quantification, active information acquisition; scikit-learn, GPyTorch, BoTorch.</p><p><strong>Deep learning & agents:</strong> PyTorch, multimodal encoders, diffusion-language-model integration, agent orchestration, evaluation and trajectory analysis.</p><p><strong>Scientific computing:</strong> Python, NumPy, SciPy, Pandas, COMSOL/MPh, MATLAB, Git, Linux, testing, LaTeX.</p></div>
+        <div class="awards"><h3>Selected awards</h3><p>British Physics Olympiad — <strong>Top Gold</strong>, 2023<br>HiMCM — <strong>Meritorious</strong>, 2023</p></div>
+      </section>
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact / 05</p><h2 id="contact-title">Let’s talk research.</h2><p>For conversations about probabilistic modelling, decision-making, or research collaborations:</p><a class="contact-email" href="mailto:yucheng.liu@st-hildas.ox.ac.uk">yucheng.liu@st-hildas.ox.ac.uk <span aria-hidden="true">↗</span></a>
+        <div class="resource-links"><a href="https://github.com/YuchengLiu0424">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/yucheng-liu-633751343">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </section>
+      <footer><span>© 2026 Yucheng Liu</span><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+    </main>
+  </div>
+</body>
+</html>
