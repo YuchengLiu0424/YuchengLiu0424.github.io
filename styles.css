@@ -504,6 +504,7 @@ footer a {
 .skip-link {
   position:fixed;
   top:-100px;
+  clip-path:inset(50%);
   left:15px;
   background:var(--ink);
   color:white;
@@ -512,6 +513,7 @@ footer a {
 }
 .skip-link:focus {
   top:15px;
+  clip-path:none;
 }
 @media(min-width:1450px) {
   .site-shell {
@@ -857,4 +859,10 @@ footer a {
   .paper-figure { margin: 17px 0 20px; }
   .paper-figure > a { padding: 8px; }
   .paper-figure figcaption { font-size: 10px; }
+}
+
+/* Keep resource controls easy to tap on narrow screens. */
+@media (max-width: 720px) {
+  .resource-links a { min-height: 44px; display: inline-flex; align-items: center; gap: 5px; }
+  .profile nav a { min-height: 44px; align-items: center; }
 }

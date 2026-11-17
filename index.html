@@ -45,8 +45,8 @@
         <p class="eyebrow section-kicker"><span class="small-rule" aria-hidden="true"></span> About / 01</p>
         <h1 id="intro-title">Learning from evidence.<br><em>Deciding under uncertainty.</em></h1>
         <p class="intro-lead">Third-year Oxford Information Engineering undergraduate researcher at Torr Vision Group.</p>
-        <p>Research interests centre on <strong>reliable and efficient intelligent systems</strong>: how they acquire evidence, represent uncertainty, and decide when to act, verify, or spend additional computation.</p>
-        <p>Previous research spans Gaussian-process surrogate modelling and Bayesian optimisation, multimodal inference and active inquiry, and verifiable agentic workflows. A continuing interest is how these ideas can support reliable multimodal reasoning and agents that use evidence and computation effectively.</p>
+        <p>Current work focuses on <strong>AI safety in looped transformers</strong>, testing whether established attacks remain effective under repeated computation.</p>
+        <p>Previous work spans Bayesian optimisation for engineering design, multimodal active inquiry, and agent workflows for software improvement.</p>
         <div class="intro-actions"><a class="button" href="#research">Explore research <span aria-hidden="true">↓</span></a><a class="text-link" href="mailto:yucheng.liu@st-hildas.ox.ac.uk">Get in touch <span aria-hidden="true">↗</span></a></div>
         <div class="education-strip">
           <div><span class="label">Education</span><strong>MEng · Oxford</strong><span>2024–2028 (expected)</span></div>
@@ -56,9 +56,8 @@
         <div class="current-interests" aria-labelledby="interests-title">
           <p class="eyebrow">Research focus</p>
           <h2 id="interests-title">Current research interests</h2>
-          <p class="interest-question">How does repeated computation affect model safety, and when does additional evidence or reasoning improve reliability?</p>
           <dl class="interest-list">
-            <div><dt>AI safety in looped transformers</dt><dd>Testing whether established safety attacks transfer to looped architectures, including adversarial suffix attacks and many-shot jailbreaking.</dd></div>
+            <div><dt>AI safety in looped transformers</dt><dd>Attack transfer and robustness under repeated computation in looped architectures.</dd></div>
             <div><dt>Efficient reasoning & AI for Science</dt><dd>Allocating computation and simulation budgets through adaptive inference, surrogate modelling, and Bayesian optimisation.</dd></div>
             <div><dt>Multimodal & visual reasoning</dt><dd>Combining uncertain visual evidence with targeted inquiry and auditable domain knowledge to support reliable decisions.</dd></div>
           </dl>
@@ -66,10 +65,10 @@
       </section>
       <section id="research" aria-labelledby="research-title">
         <div class="section-heading"><div><p class="eyebrow">Research / 02</p><h2 id="research-title">Selected research</h2></div><span class="section-aside">Papers, methods & findings</span></div>
-        <p class="section-intro">The research explores three connected questions: how to decide with limited evidence, how to verify agentic workflows, and how to combine fallible knowledge with multimodal observations.</p>
+        <p class="section-intro">Preprints on active inquiry, simulation-driven design, agent-assisted discovery, and knowledge auditing.</p>
         <div class="research-theme" aria-labelledby="theme-decisions">
           <h3 id="theme-decisions">Uncertainty-aware inference & decision-making</h3>
-          <p class="theme-description">Using limited evidence and evaluation budgets to guide decisions, from expensive engineering simulations to sequential information acquisition.</p>
+          <p class="theme-description">Acquiring useful evidence under limited question and simulation budgets.</p>
         <article class="paper">
           <div class="paper-index" aria-hidden="true">01</div>
           <div class="paper-body">
@@ -109,7 +108,7 @@
         </div>
         <div class="research-theme" aria-labelledby="theme-agents">
           <h3 id="theme-agents">Agentic learning & verification</h3>
-          <p class="theme-description">Building inspectable feedback loops for software improvement and algorithm exploration, with verification and explicit decisions to continue, act, or abstain.</p>
+          <p class="theme-description">Verifiable software improvement and algorithm exploration.</p>
         <article class="paper">
           <div class="paper-index" aria-hidden="true">03</div>
           <div class="paper-body">
@@ -122,7 +121,7 @@
               </a>
               <figcaption>Reversible digit separation and reconstruction in the STC compression pipeline. <a href="images/stc-pipeline.webp" target="_blank" rel="noopener">Enlarge <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <p>Contributed the ZiYor harness implementation supporting exploration of reversible compression transforms. The resulting STC study separates variable digit payloads from surrounding text and evaluates the discovered algorithm through a same-coder ablation and exact reconstruction.</p>
+            <p>Implemented the ZiYor harness used to explore reversible compression transforms. STC separates digit payloads from surrounding text; a same-coder ablation measures the compression benefit.</p>
             <p class="finding"><span>Key finding</span> A 1.64% smaller enwik9 archive than the same coder without digit decomposition, with exact reconstruction of the full input.</p>
             <div class="resource-links"><a class="primary-resource" href="papers/stc-revised-manuscript.pdf" aria-label="Read revised STC manuscript PDF">Revised manuscript <span class="file-type">PDF</span></a><a href="https://arxiv.org/abs/2606.03570" aria-label="STC preprint on arXiv">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/thu-nmrc/STC-for-BWT-FamilyText-Compression" aria-label="STC source code">Code <span aria-hidden="true">↗</span></a></div>
             <p class="version-note">The downloadable revision includes the updated author list; the arXiv author-list update is pending.</p>
@@ -132,7 +131,7 @@
         </div>
         <div class="research-theme" aria-labelledby="theme-multimodal">
           <h3 id="theme-multimodal">Multimodal representation & reasoning</h3>
-          <p class="theme-description">Combining uncertain observations while keeping domain knowledge distinguishable from evidence, and testing where structured priors help or fail.</p>
+          <p class="theme-description">Separating the effects of supplied knowledge from observed evidence.</p>
         <article class="paper">
           <div class="paper-index" aria-hidden="true">04</div>
           <div class="paper-body">
@@ -145,7 +144,7 @@
               </a>
               <figcaption>Simulated knowledge audit: paired prediction-error contrasts and the effect of wrong context. <a href="images/alpha-tcm-knowledge-audit.webp" target="_blank" rel="noopener">Enlarge <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <p>How does supplied knowledge change a multimodal prediction, and what happens when that knowledge is wrong? Alpha-TCM implements a workflow that separates measurements, contextual knowledge, predictions, and reviewer decisions. Replaceable priors allow controlled knowledge interventions while holding the modality encoders fixed.</p>
+            <p>Alpha-TCM separates measurements, supplied knowledge, predictions, and reviewer decisions. Replaceable priors allow controlled knowledge interventions with fixed modality encoders, revealing how correct and incorrect context affects inference.</p>
             <p class="finding"><span>Key finding</span> Across ten paired seeds and four training sizes in a fully simulated study, context improves low-data prediction over knowledge-free fusion. Equal-information learned context is competitive or stronger; corruption experiments expose harmful prior assumptions, while case-level conflict detection remains weak.</p>
             <div class="resource-links"><a class="primary-resource" href="papers/alpha-tcm-structured-prior-auditing.pdf" aria-label="Read Alpha-TCM: Auditable Knowledge Integration for Multimodal TCM Inference PDF">Read paper <span class="file-type">PDF</span></a><a href="https://arxiv.org/abs/2610.38754" aria-label="Alpha-TCM: Auditable Knowledge Integration for Multimodal TCM Inference on arXiv">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/YuchengLiu0424/Alpha-TCM-Knowledge-Integration">Project <span aria-hidden="true">↗</span></a></div>
             <p class="version-note">Current full manuscript, including supplementary material.</p>
@@ -173,15 +172,15 @@
       <section id="projects" aria-labelledby="projects-title">
         <div class="section-heading"><div><p class="eyebrow">Projects / 04</p><h2 id="projects-title">Selected code</h2></div><a class="text-link" href="https://github.com/YuchengLiu0424">GitHub profile <span aria-hidden="true">↗</span></a></div>
         <div class="project-grid">
-          <article class="project" id="project-dicojev"><p class="label">Independent project</p><h3>DiCoJev</h3><p>Developed a framework separating two decision questions: whether generated candidates cover an acceptable action, and which candidate to select. Typed feedback supports acting, expanding the candidate set, abstaining, or escalating—an experimental basis for adaptive verification.</p><a class="text-link" href="https://github.com/YuchengLiu0424/DiCoJev">Explore repository <span aria-hidden="true">↗</span></a></article>
-          <article class="project" id="project-agents"><p class="label">Contributor</p><h3>AutoRSI & ZiYor Harness</h3><p>Contributions to bounded software-improvement loops with verification and replay, and an auditable Harbor-compatible terminal-agent harness. The focus is inspectable execution and feedback for diagnosing failures and guiding subsequent iterations.</p><div class="resource-links"><a href="https://github.com/wlkqyang-star/autorsi">AutoRSI <span aria-hidden="true">↗</span></a><a href="https://github.com/ziyor-ai/ziyor-harness">ZiYor <span aria-hidden="true">↗</span></a></div></article>
-          <article class="project project-wide"><div><p class="label">Research software · Author</p><h3>Surrogate-Assisted FEM Design</h3></div><div><p>A Python–COMSOL workflow for constrained design using Gaussian-process surrogates. The current study examines candidate-pool coverage and continuous acquisition search across electromagnetic and thermal simulations, with matched evaluation budgets and mesh and domain checks.</p><a class="text-link" href="https://github.com/YuchengLiu0424/FEM-GPR-Bayesian_Optimization_on_Coil">Explore repository <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project" id="project-dicojev"><p class="label">Independent project</p><h3>DiCoJev</h3><p>Developed a framework that separates candidate coverage from candidate selection. Typed feedback guides whether to act, expand the candidate set, abstain, or escalate.</p><a class="text-link" href="https://github.com/YuchengLiu0424/DiCoJev">Explore repository <span aria-hidden="true">↗</span></a></article>
+          <article class="project" id="project-agents"><p class="label">Contributor</p><h3>AutoRSI & ZiYor Harness</h3><p>Contributed to software-improvement loops with verification and replay, and a Harbor-compatible terminal-agent harness for inspecting execution and diagnosing failures.</p><div class="resource-links"><a href="https://github.com/wlkqyang-star/autorsi">AutoRSI <span aria-hidden="true">↗</span></a><a href="https://github.com/ziyor-ai/ziyor-harness">ZiYor <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project project-wide"><div><p class="label">Research software · Author</p><h3>Surrogate-Assisted FEM Design</h3></div><div><p>Python–COMSOL tools for FEM sampling, Gaussian-process modelling, and constrained coil optimisation. The public repository contains the base coil workflow and links to the expanded coil/thermal study.</p><a class="text-link" href="https://github.com/YuchengLiu0424/FEM-GPR-Bayesian_Optimization_on_Coil">Explore repository <span aria-hidden="true">↗</span></a></div></article>
         </div>
         <div class="skills"><h3>Methods & tools</h3><p><strong>Probabilistic ML:</strong> Gaussian processes, Bayesian optimisation, uncertainty quantification, active information acquisition; scikit-learn, GPyTorch, BoTorch.</p><p><strong>Deep learning & agents:</strong> PyTorch, multimodal encoders, diffusion-language-model integration, agent orchestration, evaluation and trajectory analysis.</p><p><strong>Scientific computing:</strong> Python, NumPy, SciPy, Pandas, COMSOL/MPh, MATLAB, Git, Linux, testing, LaTeX.</p></div>
         <div class="awards"><h3>Selected awards</h3><p>British Physics Olympiad — <strong>Top Gold</strong>, 2023<br>HiMCM — <strong>Meritorious</strong>, 2023</p></div>
       </section>
       <section id="contact" class="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">Contact / 05</p><h2 id="contact-title">Let’s talk research.</h2><p>For conversations about reliable and efficient intelligent systems, probabilistic modelling, or research collaborations:</p><a class="contact-email" href="mailto:yucheng.liu@st-hildas.ox.ac.uk">yucheng.liu@st-hildas.ox.ac.uk <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Contact / 05</p><h2 id="contact-title">Let’s talk research.</h2><p>For research enquiries and collaborations:</p><a class="contact-email" href="mailto:yucheng.liu@st-hildas.ox.ac.uk">yucheng.liu@st-hildas.ox.ac.uk <span aria-hidden="true">↗</span></a>
         <div class="resource-links"><a href="https://github.com/YuchengLiu0424">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/yucheng-liu-633751343">LinkedIn <span aria-hidden="true">↗</span></a></div>
       </section>
       <footer><span>© 2026 Yucheng Liu</span><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
