@@ -189,6 +189,7 @@ h1 em {
 }
 .intro-actions {
   display:flex;
+  flex-wrap:wrap;
   align-items:center;
   gap:26px;
   margin:27px 0 39px;
