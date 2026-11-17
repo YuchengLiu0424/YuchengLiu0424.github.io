@@ -14,7 +14,7 @@
   <title>Yucheng Liu — Research & Engineering</title>
   <link rel="canonical" href="https://yuchengliu0424.github.io/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=7422073189bc">
+  <link rel="stylesheet" href="styles.css?v=47ea8995ebe2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -57,10 +57,10 @@
           <p class="eyebrow">Research focus</p>
           <h2 id="interests-title">Current research interests</h2>
           <dl class="interest-list">
-            <div><dt>AI safety &amp; alignment</dt><dd>Testing where model reasoning fails and whether intended behaviour holds up under attacks.</dd></div>
-            <div><dt>Multimodal learning &amp; reasoning</dt><dd>Pretraining and post-training to learn useful representations from images and other modalities.</dd></div>
-            <div><dt>Uncertainty-aware decision-making</dt><dd>Choosing the next question or evaluation to make the most of limited evidence and budgets.</dd></div>
-            <div><dt>AI agents &amp; verification</dt><dd>Using feedback and verification to check actions and guide iterative improvement.</dd></div>
+            <div><dt>AI safety &amp; alignment</dt><dd>Robustness to attacks and reliable model behaviour.</dd></div>
+            <div><dt>Multimodal learning &amp; reasoning</dt><dd>Pretraining and post-training across images and other modalities.</dd></div>
+            <div><dt>Uncertainty-aware decision-making</dt><dd>Adaptive inquiry and optimisation under limited budgets.</dd></div>
+            <div><dt>AI agents &amp; verification</dt><dd>Software improvement through feedback, evaluation, and replay.</dd></div>
           </dl>
         </div>
       </section>
@@ -73,16 +73,16 @@
         <article class="paper">
           <div class="paper-index" aria-hidden="true">01</div>
           <div class="paper-body">
-            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Image-guided inquiry</span></div>
             <h4>Seeing Is Not Enough: Knowledge-Grounded Active Inquiry from Uncertain Visual Evidence</h4>
             <p class="authors"><strong>Yucheng Liu</strong>, Everett X. Wang</p>
+            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Image-guided inquiry</span></div>
             <figure class="paper-figure">
               <a href="images/seeing-is-not-enough-pipeline.webp" target="_blank" rel="noopener" aria-label="Enlarge figure: Workflow linking tongue and pulse evidence to symptom questions, Bayesian updates, reassessment, and reporting.">
                 <img src="images/seeing-is-not-enough-pipeline.webp" width="1314" height="477" alt="Workflow linking tongue and pulse evidence to symptom questions, Bayesian updates, reassessment, and reporting." loading="lazy" decoding="async">
               </a>
               <figcaption>From visual evidence to targeted symptom inquiry and an inspectable report. <a href="images/seeing-is-not-enough-pipeline.webp" target="_blank" rel="noopener">Enlarge <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <p>Tongue photographs leave clinically relevant symptoms unobserved. This TCM decision-support study combines image and pulse evidence with targeted symptom questions, reassesses predictions when their support falls, and records the evidence behind a ranked syndrome shortlist. The benchmark contains 2,600 constructed cases based on real photographs; 2,599 enter source-disjoint evaluation and one is training-only.</p>
+            <p>Combines tongue and pulse evidence with adaptive symptom questions, reassessment, and recorded support for a ranked syndrome shortlist. Of 2,600 constructed cases based on real photographs, 2,599 enter source-disjoint evaluation and one is training-only.</p>
             <p class="finding"><span>Key finding</span> At acquisition cost 12 on clean images, combined image/pulse evidence and inquiry reaches 65.8% fine-syndrome accuracy and 90.8% top-three inclusion, compared with 59.4% and 87.3% for a same-prior, training-optimised static question order.</p>
             <div class="resource-links"><a class="primary-resource" href="papers/alpha-tcm-active-bayesian-inquiry.pdf" aria-label="Read Seeing Is Not Enough: Knowledge-Grounded Active Inquiry from Uncertain Visual Evidence PDF">Read paper <span class="file-type">PDF</span></a><a href="https://arxiv.org/abs/2610.38774" aria-label="Seeing Is Not Enough: Knowledge-Grounded Active Inquiry from Uncertain Visual Evidence on arXiv">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/YuchengLiu0424/Seeing-Is-Not-Enough">Project <span aria-hidden="true">↗</span></a></div>
             <p class="version-note">Current full manuscript, including supplementary material.</p>
@@ -91,16 +91,16 @@
         <article class="paper">
           <div class="paper-index" aria-hidden="true">02</div>
           <div class="paper-body">
-            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Constrained optimisation</span></div>
             <h4>When Candidate Pools Miss Active Constraints: Evidence from Electromagnetic and Thermal Design</h4>
             <p class="authors"><strong>Yucheng Liu</strong>, Chuncheng Zhao</p>
+            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Constrained optimisation</span></div>
             <figure class="paper-figure">
               <a href="images/fem-thermal-design.webp" target="_blank" rel="noopener" aria-label="Enlarge figure: Thermal benchmark showing copper-rib geometry alongside the simulated temperature-rise field.">
                 <img src="images/fem-thermal-design.webp" width="1584" height="770" alt="Thermal benchmark showing copper-rib geometry alongside the simulated temperature-rise field." loading="lazy" decoding="async">
               </a>
               <figcaption>Thermal FEM benchmark: copper layout and temperature rise under a 1-W load. <a href="images/fem-thermal-design.webp" target="_blank" rel="noopener">Enlarge <span aria-hidden="true">↗</span></a></figcaption>
             </figure>
-            <p>Finite candidate pools can miss useful designs near intersecting active constraints, even when a surrogate is accurate. This study connects a sampling analysis with controlled synthetic experiments and matched electromagnetic-coil and thermal-design simulations to examine how acquisition search uses a limited FEM budget.</p>
+            <p>Tests how finite candidate pools miss useful designs near active constraints. Sampling analysis, controlled synthetic experiments, and matched coil and thermal simulations compare acquisition search under limited FEM budgets.</p>
             <p class="finding"><span>Key finding</span> Across ten matched seeds on each FEM problem, continuous acquisition search improves on pool-based expected improvement. Standard continuous LogEI outperforms the tested EI refinement on nine coil seeds and all ten thermal seeds.</p>
             <div class="resource-links"><a class="primary-resource" href="papers/constraint-aware-fem-design.pdf" aria-label="Read When Candidate Pools Miss Active Constraints: Evidence from Electromagnetic and Thermal Design PDF">Read paper <span class="file-type">PDF</span></a><a href="https://arxiv.org/abs/2608.18903" aria-label="When Candidate Pools Miss Active Constraints: Evidence from Electromagnetic and Thermal Design on arXiv">arXiv <span aria-hidden="true">↗</span></a><a href="https://github.com/YuchengLiu0424/FEM-GPR-Bayesian_Optimization_on_Coil" aria-label="Coil optimisation source code">Code <span aria-hidden="true">↗</span></a></div>
             <p class="version-note">Current full manuscript, including supplementary material.</p>
@@ -113,9 +113,9 @@
         <article class="paper">
           <div class="paper-index" aria-hidden="true">03</div>
           <div class="paper-body">
-            <div class="paper-meta"><span class="status">Preprint · revised manuscript</span><span>2026</span><span>Agent-assisted discovery</span></div>
             <h4>STC: Reversible Digit-Context Decomposition for BWT-Family Text Compression</h4>
             <p class="authors">Jingyang Du, Yang Shen, Anling Xiang, <strong>Yucheng Liu</strong></p>
+            <div class="paper-meta"><span class="status">Preprint · revised manuscript</span><span>2026</span><span>Agent-assisted discovery</span></div>
             <figure class="paper-figure">
               <a href="images/stc-pipeline.webp" target="_blank" rel="noopener" aria-label="Enlarge figure: STC pipeline separating digit runs from the main text stream and restoring them during decompression.">
                 <img src="images/stc-pipeline.webp" width="1404" height="328" alt="STC pipeline separating digit runs from the main text stream and restoring them during decompression." loading="lazy" decoding="async">
@@ -136,9 +136,9 @@
         <article class="paper">
           <div class="paper-index" aria-hidden="true">04</div>
           <div class="paper-body">
-            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Knowledge auditing</span></div>
             <h4>Alpha-TCM: Auditable Knowledge Integration for Multimodal TCM Inference</h4>
             <p class="authors"><strong>Yucheng Liu</strong>, Everett X. Wang</p>
+            <div class="paper-meta"><span class="status">Preprint</span><span>2026</span><span>Knowledge auditing</span></div>
             <figure class="paper-figure">
               <a href="images/alpha-tcm-knowledge-audit.webp" target="_blank" rel="noopener" aria-label="Enlarge figure: Paired prediction-error differences across four training sizes, with 95 percent bootstrap intervals, including damage from wrong context.">
                 <img src="images/alpha-tcm-knowledge-audit.webp" width="1383" height="476" alt="Paired prediction-error differences across four training sizes, with 95 percent bootstrap intervals, including damage from wrong context." loading="lazy" decoding="async">
