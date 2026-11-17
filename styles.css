@@ -869,8 +869,8 @@ footer a {
 
 /* Affiliation marks use a shared canvas, scaled to a quiet supporting size. */
 .experience-meta { min-width: 0; }
-.institution-mark { display: block; width: 38px; height: 38px; margin-top: 10px; text-decoration: none; }
-.institution-art { display: flex; align-items: center; justify-content: center; position: relative; width: 52px; height: 52px; overflow: hidden; transform: scale(.73); transform-origin: top left; border-radius: 3px; }
+.institution-mark { display: block; width: 44px; height: 44px; margin-top: 10px; text-decoration: none; }
+.institution-art { display: flex; align-items: center; justify-content: center; position: relative; width: 52px; height: 52px; overflow: hidden; transform: scale(.846); transform-origin: top left; border-radius: 3px; }
 .institution-art img { display: block; width: 48px; height: 48px; object-fit: contain; }
 .mark-tvg .institution-art { background: #253149; padding: 3px; }
 .mark-mlrg .institution-art { color: #002147; font: 600 18px var(--sans); letter-spacing: -.5px; }
@@ -879,8 +879,8 @@ footer a {
 .mark-iee img { position: absolute; height: 48px; width: auto; max-width: none; left: 4px; }
 .mark-binn img { position: absolute; height: 68px; width: auto; max-width: none; left: -1px; top: -4px; }
 .institution-mark:hover { opacity: .8; }
-.education-institution { display: block; width: 132px; max-width: 100%; margin-top: 12px; }
-.education-institution img { display: block; width: 100%; height: auto; }
+.footer-institution { display: block; width: 210px; max-width: 100%; margin-bottom: 24px; }
+.footer-institution img { display: block; width: 100%; height: auto; }
 .figure-viewer { width: min(1200px, 94vw); max-height: 92dvh; padding: 56px 20px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); overflow: auto; }
 .figure-viewer::backdrop { background: rgb(20 24 22 / .75); }
 .figure-viewer img { display: block; width: 100%; height: auto; }
@@ -900,3 +900,6 @@ body.figure-open { overflow: hidden; }
   .project p:not(.label), .interest-list dd { font-size: 13px; }
   .figure-viewer { padding: 54px 10px 12px; width: 96vw; }
 }
+
+footer { display: block; }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
