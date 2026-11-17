@@ -236,7 +236,7 @@ h1 em {
   font-size:12px;
   font-weight:600;
 }
-.education-strip div>span:last-child {
+.education-strip div>span:not(.label) {
   font-size:10px;
   color:var(--muted);
   margin-top:3px;
@@ -651,7 +651,7 @@ footer a {
   .education-strip strong {
     font-size:11px;
   }
-  .education-strip div>span:last-child {
+  .education-strip div>span:not(.label) {
     font-size:10px;
   }
   section {
@@ -867,19 +867,36 @@ footer a {
   .profile nav a { min-height: 44px; align-items: center; }
 }
 
-/* Official affiliation marks: preserve colours and isolate existing emblems. */
+/* Affiliation marks use a shared canvas, scaled to a quiet supporting size. */
 .experience-meta { min-width: 0; }
-.institution-mark { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; margin-top: 12px; text-decoration: none; overflow: hidden; }
-.institution-mark img { display: block; width: 48px; height: 48px; object-fit: contain; }
-.mark-tvg { background: #253149; border-radius: 3px; padding: 3px; }
-.mark-college, .mark-iee, .mark-binn { position: relative; background: white; border-radius: 3px; }
+.institution-mark { display: block; width: 38px; height: 38px; margin-top: 10px; text-decoration: none; }
+.institution-art { display: flex; align-items: center; justify-content: center; position: relative; width: 52px; height: 52px; overflow: hidden; transform: scale(.73); transform-origin: top left; border-radius: 3px; }
+.institution-art img { display: block; width: 48px; height: 48px; object-fit: contain; }
+.mark-tvg .institution-art { background: #253149; padding: 3px; }
+.mark-mlrg .institution-art { color: #002147; font: 600 18px var(--sans); letter-spacing: -.5px; }
+.mark-college .institution-art, .mark-iee .institution-art, .mark-binn .institution-art { background: white; }
 .mark-college img { position: absolute; height: 48px; width: auto; max-width: none; left: -52px; }
 .mark-iee img { position: absolute; height: 48px; width: auto; max-width: none; left: 4px; }
 .mark-binn img { position: absolute; height: 68px; width: auto; max-width: none; left: -1px; top: -4px; }
-.profile-institution { display: block; max-width: 185px; margin-top: 24px; }
-.profile-institution img { display: block; width: 100%; height: auto; }
+.institution-mark:hover { opacity: .8; }
+.education-institution { display: block; width: 132px; max-width: 100%; margin-top: 12px; }
+.education-institution img { display: block; width: 100%; height: auto; }
+.figure-viewer { width: min(1200px, 94vw); max-height: 92dvh; padding: 56px 20px 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); overflow: auto; }
+.figure-viewer::backdrop { background: rgb(20 24 22 / .75); }
+.figure-viewer img { display: block; width: 100%; height: auto; }
+.figure-viewer-caption { margin: 14px 0 0; font-size: 13px; }
+.figure-close { position: absolute; right: 12px; top: 8px; min-height: 40px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; }
+.figure-close:hover { border-color: var(--accent); }
+.figure-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+body.figure-open { overflow: hidden; }
+.paper-figure > a { cursor: zoom-in; }
+@media (min-width: 721px) {
+  .profile { top: 20px; min-height: 0; max-height: calc(100dvh - 40px); overflow-y: auto; padding-top: 38px; }
+}
 @media (max-width: 720px) {
-  .experience-meta { display: flex; align-items: center; gap: 13px; margin-bottom: 5px; }
+  .experience-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 3px; }
   .experience-meta .institution-mark { order: -1; margin: 0; flex-shrink: 0; }
-  .profile-institution { grid-column: 1 / -1; margin: 14px 0 18px; max-width: 170px; }
+  .paper-body > p:not(.authors):not(.version-note), .experience-entry div > p:last-child:not(.role) { font-size: 14px; line-height: 1.7; }
+  .project p:not(.label), .interest-list dd { font-size: 13px; }
+  .figure-viewer { padding: 54px 10px 12px; width: 96vw; }
 }
