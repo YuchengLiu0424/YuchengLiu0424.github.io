@@ -1,0 +1,8 @@
+Affiliation marks sourced from official institution/group properties.
+TVG: https://torrvision.com/ — text wordmark, matching the current site treatment.
+College of AI: https://collegeai.tsinghua.edu.cn/images/logos.png
+BINN: http://www.binn.cas.cn/images/bg_banner.gif
+IEE-CAS: https://iee.cas.cn/images/logo_iee.png
+Oxford MLRG: https://github.com/OxfordML — official organisation avatar.
+Oxford Engineering + University combined mark: https://eng.ox.ac.uk/images/logo.svg
+Original image files are unmodified. CSS displays the existing emblems within the CollegeAI, BINN, and IEE header assets. Marks identify affiliations; ownership remains with the respective institutions.

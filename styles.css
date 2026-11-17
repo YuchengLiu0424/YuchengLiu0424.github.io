@@ -866,3 +866,20 @@ footer a {
   .resource-links a { min-height: 44px; display: inline-flex; align-items: center; gap: 5px; }
   .profile nav a { min-height: 44px; align-items: center; }
 }
+
+/* Official affiliation marks: preserve colours and isolate existing emblems. */
+.experience-meta { min-width: 0; }
+.institution-mark { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; margin-top: 12px; text-decoration: none; overflow: hidden; }
+.institution-mark img { display: block; width: 48px; height: 48px; object-fit: contain; }
+.mark-tvg { font: 700 24px Georgia, serif; letter-spacing: -.5px; color: #002147; }
+.mark-college, .mark-iee, .mark-binn { position: relative; background: white; border-radius: 3px; }
+.mark-college img { position: absolute; height: 48px; width: auto; max-width: none; left: -52px; }
+.mark-iee img { position: absolute; height: 48px; width: auto; max-width: none; left: 4px; }
+.mark-binn img { position: absolute; height: 68px; width: auto; max-width: none; left: -1px; top: -4px; }
+.profile-institution { display: block; max-width: 185px; margin-top: 24px; }
+.profile-institution img { display: block; width: 100%; height: auto; }
+@media (max-width: 720px) {
+  .experience-meta { display: flex; align-items: center; gap: 13px; margin-bottom: 5px; }
+  .experience-meta .institution-mark { order: -1; margin: 0; flex-shrink: 0; }
+  .profile-institution { grid-column: 1 / -1; margin: 14px 0 18px; max-width: 170px; }
+}
