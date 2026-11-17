@@ -824,3 +824,15 @@ footer a {
   .research-theme > h3 { font-size: 22px; }
   .theme-related { margin-left: 32px; }
 }
+
+/* Primary access to each publication is the locally hosted full PDF. */
+.paper .resource-links .primary-resource {
+  background: var(--accent);
+  color: #fffaf5;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  padding: 6px 10px;
+  font-weight: 600;
+}
+.paper .resource-links .primary-resource:hover { background: #632932; }
+.paper .primary-resource .file-type { background: #fffaf5; color: var(--accent); }
