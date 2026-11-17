@@ -871,7 +871,7 @@ footer a {
 .experience-meta { min-width: 0; }
 .institution-mark { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; margin-top: 12px; text-decoration: none; overflow: hidden; }
 .institution-mark img { display: block; width: 48px; height: 48px; object-fit: contain; }
-.mark-tvg { font: 700 24px Georgia, serif; letter-spacing: -.5px; color: #002147; }
+.mark-tvg { background: #253149; border-radius: 3px; padding: 3px; }
 .mark-college, .mark-iee, .mark-binn { position: relative; background: white; border-radius: 3px; }
 .mark-college img { position: absolute; height: 48px; width: auto; max-width: none; left: -52px; }
 .mark-iee img { position: absolute; height: 48px; width: auto; max-width: none; left: 4px; }

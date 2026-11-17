@@ -1,5 +1,5 @@
 Affiliation marks sourced from official institution/group properties.
-TVG: https://torrvision.com/ — text wordmark, matching the current site treatment.
+TVG: https://torrvision.com/images/tvg-logo.svg — official bull-and-waves vector emblem.
 College of AI: https://collegeai.tsinghua.edu.cn/images/logos.png
 BINN: http://www.binn.cas.cn/images/bg_banner.gif
 IEE-CAS: https://iee.cas.cn/images/logo_iee.png
